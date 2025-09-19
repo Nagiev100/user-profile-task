@@ -24,6 +24,7 @@ defineProps<{ user: UserTypes }>()
   width: 100%;
   border-radius: 3.2rem;
   overflow: hidden;
+  margin-bottom: 3rem;
 }
 
 .background {
