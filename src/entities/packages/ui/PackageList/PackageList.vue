@@ -46,6 +46,7 @@ defineProps<{ packages: PackagesTypes[] }>()
   gap: 1.8rem;
   max-width: 37.5rem;
   width: 100%;
+  margin-bottom: 0.5rem;
 }
 
 .packages-with-icon {
