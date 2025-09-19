@@ -11,12 +11,12 @@ export const usePackagesStore = defineStore('userPackages', {
                 {
                     id: "1",
                     packageName: "Tinderone Plus+",
-                    description: "Безлимит лайков и многое другое!"
+                    description: "Безлимит лайков и многое другое!",
                 },
                 {
                     id: "2",
                     packageName: "Tinderone Gold",
-                    description: "Узнай, кто тебя лайкнул и многое другое!"
+                    description: "Узнай, кто тебя лайкнул и многое другое!",
                 },
                 {
                     id: "3",
