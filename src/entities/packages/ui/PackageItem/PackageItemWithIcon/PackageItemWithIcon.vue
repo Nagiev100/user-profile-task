@@ -5,37 +5,45 @@ defineProps<{ package: PackageItemWithIconTypes }>()
 </script>
 
 <template>
-  <button class="package-item">
+  <button class="package-item" :style="{ borderColor: `var(${package.color})`}">
     <div class="iconContainer">
-      <ContainerIcons>
+      <ContainerIcons >
         <component :is="package.icon" class="icon" />
       </ContainerIcons>
     </div>
-    <p class="title">{{ package.title }}</p>
+    <p class="title" :style="{ color:`var(${package.color})` }">{{ package.title }}</p>
   </button>
 </template>
 
 <style scoped>
 .package-item {
-  position: relative; /* Добавляем позиционирование */
+  position: relative;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Чтобы текст шел от левого края */
+  align-items: flex-start;
   justify-content: center;
   gap: 0.2rem;
   width: 15.4rem;
   border-radius: 3rem;
   border: 4px solid green;
-  background-color: red;
-  overflow: hidden;
-  padding: 2rem 0.7rem 2rem 2rem;
+  background-color: var(--color-bg);
+  padding: 1rem 5rem 1rem 1rem;
   text-align: left;
+}
+
+.title {
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 24px;
+  letter-spacing: 0;
+
 }
 
 .iconContainer {
   position: absolute;
-  top: 0rem;
-  right: 0rem;
+  z-index: 1;
+  top: -1rem;
+  right: 1rem;
   width: 2rem;
   height: 2rem;
 }

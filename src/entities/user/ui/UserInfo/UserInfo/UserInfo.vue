@@ -39,7 +39,7 @@ defineProps<{ user: UserTypes }>()
 .avatar-wrapper {
   position: relative;
   display: inline-block;
-  margin-bottom: 1.2rem;
+  margin-bottom: 2.3rem;
 }
 
 .avatar-row {
@@ -66,6 +66,7 @@ defineProps<{ user: UserTypes }>()
 .user-info-row {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
 }
 

@@ -21,9 +21,12 @@ defineProps<{ package: PackageItemTypes }>()
   width: 32.7rem;
   border-radius: 3rem;
   border: 4px solid green;
-  background-color: red;
+  background-color: var(--color-bg);
   text-align: center;
   overflow: hidden;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+  cursor: pointer;
 }
 
 .title {

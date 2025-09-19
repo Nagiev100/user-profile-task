@@ -17,5 +17,6 @@
   align-items: center;
   justify-content: center;
   background-color: var(--color-bg);
+  cursor: pointer;
 }
 </style>

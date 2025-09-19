@@ -2,14 +2,18 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid black;
+
 }
 
 :root {
     font-size: 10px;
 
     --color-bg: #ffffff;
+
+    /* Text colors */
     --color-text-primary: #454545;
+    --color-text-blue: #60B3FF;
+    --color-text-purple: #C03AFF;
 
     /* Gradients */
     --subscription-orange-start: #FF5F6D;

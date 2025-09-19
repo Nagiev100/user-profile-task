@@ -22,14 +22,14 @@ defineProps<{ packages: PackagesTypes[] }>()
        <PackageItemWithIcon
            :package="{
           title: 'Нужны суперлайки?',
-          color: 'red',
+          color: '--color-text-blue',
           icon: StarIcon,
         }"
        />
        <PackageItemWithIcon
            :package="{
           title: 'Нужны Супербумы?',
-          color: 'blue',
+          color: '--color-text-purple',
           icon: MdiStormIcon,
         }"
        />
