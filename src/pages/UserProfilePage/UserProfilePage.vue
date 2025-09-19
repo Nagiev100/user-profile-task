@@ -24,6 +24,7 @@ onMounted(() => {
 <style scoped>
 .user-profile-page {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   min-height: 100vh;

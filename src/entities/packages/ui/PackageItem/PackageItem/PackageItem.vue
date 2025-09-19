@@ -13,28 +13,24 @@ defineProps<{ package: PackageItemTypes }>()
 
 <style scoped>
 .package-item {
-  all: unset;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 1.5rem 3.8rem ;
-  border-radius: 0.4rem;
-  background-color: #f3f3f3;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+  gap: 0.2rem;
+  width: 32.7rem;
+  border-radius: 3rem;
+  border: 4px solid green;
+  background-color: red;
   text-align: center;
+  overflow: hidden;
 }
 
-.title, .description {
-  font-family: 'Futura PT', sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2.2rem;
-  line-height: 2.4rem;
-  letter-spacing: 0;
-  text-align: center;
-  color: #000000;
+.title {
+  font-weight: 700;
+  font-size: 2.8rem;
+  line-height: 3.5rem;
+  letter-spacing:0;
 }
 
 .description {
