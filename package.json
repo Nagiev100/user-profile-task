@@ -24,6 +24,7 @@
     "vite": "^7.0.6",
     "vite-plugin-svg-loader": "^1.0.0",
     "vite-plugin-vue-devtools": "^8.0.0",
+    "vite-svg-loader": "^5.1.0",
     "vue-tsc": "^3.0.7"
   }
 }

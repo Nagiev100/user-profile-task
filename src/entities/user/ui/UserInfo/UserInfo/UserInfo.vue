@@ -2,7 +2,9 @@
 import type { UserTypes } from '../../../types/userTypes'
 import ProfileStatus from '../ProfileStatus/ProfileStatus.vue'
 import ContainerIcons from '../../ContainerIcons/ContainerIcons.vue'
-import SettingsIcon from './../../../../../shared/icons/svg'
+import IconSettings from '../../../../../shared/icons/svg/settingsIcon.svg'
+import MarkerIcon from '../../../../../shared/icons/svg/markerIcon.svg'
+import CheckIcon from '../../../../../shared/icons/svg/сheckIcon.svg'
 
 defineProps<{ user: UserTypes }>()
 </script>
@@ -10,12 +12,19 @@ defineProps<{ user: UserTypes }>()
 <template>
   <div class="containerUserInfo">
     <div class="avatar-wrapper">
-      <img :src="user.avatar" alt="User avatar" class="avatar" />
+      <section class="avatar-row">
+        <ContainerIcons><MarkerIcon/></ContainerIcons>
+        <img :src="user.avatar" alt="User avatar" class="avatar" />
+        <ContainerIcons><IconSettings/></ContainerIcons>
+      </section>
       <ProfileStatus class="status-overlay">
         80% заполнено
       </ProfileStatus>
     </div>
-    <h2 class="name">{{ `${user.name}, ${user.age}` }}</h2>
+    <section class="user-info-row">
+      <h2 class="name">{{ `${user.name}, ${user.age}` }}</h2>
+      <CheckIcon/>
+    </section>
   </div>
 </template>
 
@@ -30,6 +39,13 @@ defineProps<{ user: UserTypes }>()
 .avatar-wrapper {
   position: relative;
   display: inline-block;
+  margin-bottom: 1.2rem;
+}
+
+.avatar-row {
+  display: flex;
+  align-items: center;
+  gap: 3.8rem;
 }
 
 .avatar {
@@ -47,11 +63,16 @@ defineProps<{ user: UserTypes }>()
   z-index: 2;
 }
 
+.user-info-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
 .name {
   font-weight: 700;
   font-size: 2rem;
   line-height: 2.2rem;
   color: var(--color-text-primary);
-  margin-top: 1.2rem;
 }
 </style>
