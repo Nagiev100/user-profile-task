@@ -1,12 +1,15 @@
 <script setup lang="ts">
 import UserCard from '../../entities/user/ui/UserCard/UserCard.vue'
 import {useUserStore} from "@/entities/user/model/useUserStore";
+import {usePackagesStore} from "@/entities/packages/model/usePackagesStore"
 import { onMounted } from 'vue'
 
 const userStore = useUserStore()
+const packagesStore = usePackagesStore()
 
 onMounted(() => {
-  userStore.initializeUser()
+  userStore.initializeUser();
+  packagesStore.initializePackages();
 })
 </script>
 
