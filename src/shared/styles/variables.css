@@ -30,4 +30,10 @@
 
     --subscription-pink-start: #FF1569;
     --subscription-pink-end: #C03AFF;
-    --subscription-pink-gradient: linear-gradient(135deg, var(--subscription-pink-start), var(--subscription-pink-end))}
+    --subscription-pink-gradient: linear-gradient(135deg, var(--subscription-pink-start), var(--subscription-pink-end));
+
+    --profile-completion-start: #FE7347;
+    --profile-completion-end: #FF2883;
+    --profile-completion-gradient: linear-gradient(135deg, var(--profile-completion-start), var(--profile-completion-end));
+
+}
