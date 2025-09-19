@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import UserCard from '../../entities/user/ui/UserCard/UserCard.vue';
 import PackageList from '../../entities/packages/ui/PackageList/PackageList.vue'
+import ButtonNav from '../../navigation/ui/BottomNav.vue'
 import {useUserStore} from "@/entities/user/model/useUserStore";
 import {usePackagesStore} from "@/entities/packages/model/usePackagesStore"
 import { onMounted } from 'vue'
@@ -18,6 +19,7 @@ onMounted(() => {
   <section class="user-profile-page">
     <UserCard v-if="userStore.user" :user="userStore.user"/>
     <PackageList v-if="packagesStore.packages" :packages="packagesStore.packages"/>
+    <ButtonNav/>
   </section>
 </template>
 

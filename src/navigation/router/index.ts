@@ -1,21 +1,14 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import {createRouter, createWebHistory} from 'vue-router'
 import UserProfilePage from '../../pages/UserProfilePage/UserProfilePage.vue'
 import DefaultPage from '../../pages/DefaultPage/DefaultPage.vue'
-
-export enum TabLink {
-    USERPROFILE = '/',
-    FAVORITE = '/favorite',
-    SETTINGS = '/settings',
-    HOME = '/home',
-    CARD = '/card'
-}
+import {TabLink} from "../constants/constantsLink";
 
 const routes = [
-    { path: '/', name: 'UserProfile', component: UserProfilePage },
-    { path: '/favorite', name: 'favorite', component: DefaultPage },
-    { path: '/settings', name: 'settings', component: DefaultPage },
-    { path: '/home', name: 'home', component: DefaultPage },
-    { path: '/card', name: 'card', component: DefaultPage },
+    { path: TabLink.USERPROFILE, name: 'UserProfile', component: UserProfilePage },
+    { path: TabLink.FAVORITE, name: 'favorite', component: DefaultPage },
+    { path: TabLink.SETTINGS, name: 'settings', component: DefaultPage },
+    { path: TabLink.HOME, name: 'home', component: DefaultPage },
+    { path: TabLink.CARD, name: 'card', component: DefaultPage },
 ]
 
 export const router = createRouter({

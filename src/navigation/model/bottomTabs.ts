@@ -1,9 +1,9 @@
-import HeartIcon from '../../../src/shared/icons/heart.svg';
-import StarsFavoriteIcon from '../../../src/shared/icons/favorite.svg';
-import PersonIcon from '../../../src/shared/icons/person.svg';
-import EmailIcon from '../../../src/shared/icons/email.svg';
-import CardsIcon from '../../../src/shared/icons/cards.svg';
-import {TabLink} from "@/navigation/router";
+import HeartIcon from '../../../src/shared/icons/svg/heart.svg';
+import StarsFavoriteIcon from '../../shared/icons/svg/favorite.svg';
+import PersonIcon from '../../../src/shared/icons/svg/person.svg';
+import EmailIcon from '../../../src/shared/icons/svg/email.svg';
+import CardsIcon from '../../../src/shared/icons/svg/cards.svg';
+import {TabLink} from "../constants/constantsLink";
 
 export const ButtonTabs = [
     {
