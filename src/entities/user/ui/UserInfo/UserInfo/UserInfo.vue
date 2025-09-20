@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import type { UserTypes } from '../../../types/userTypes'
 import ProfileStatus from '../ProfileStatus/ProfileStatus.vue'
-import ContainerIcons from '../../ContainerIcons/ContainerIcons.vue'
+import ContainerIcons from '../../../../../shared/ui/ContainerIcons/ContainerIcons.vue'
 import IconSettings from '../../../../../shared/icons/svg/settingsIcon.svg'
 import MarkerIcon from '../../../../../shared/icons/svg/markerIcon.svg'
 import CheckIcon from '../../../../../shared/icons/svg/сheckIcon.svg'

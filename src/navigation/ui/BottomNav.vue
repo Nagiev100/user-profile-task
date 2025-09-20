@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import { useRoute, useRouter } from 'vue-router'
 import { ButtonTabs } from '@/navigation/model/bottomTabs'
+import ContainerIcons from "../../shared/ui/ContainerIcons/ContainerIcons.vue"
 
 const route = useRoute()
 const router = useRouter()
@@ -21,7 +22,10 @@ const isActive = (link: string) => route.path === link
         :class="{ active: isActive(tab.navigateLink) }"
         @click="navigateTo(tab.navigateLink)"
     >
-      <component :is="tab.icon" class="tab-icon" />
+      <ContainerIcons v-if="tab.type" color="red">
+        <component :is="tab.icon" class="tab-icon" />
+      </ContainerIcons>
+      <component v-else :is="tab.icon" class="tab-icon" />
     </button>
   </nav>
 </template>
@@ -46,7 +50,7 @@ const isActive = (link: string) => route.path === link
 }
 
 .tab-icon {
-  fill: #aaa;
+  fill: var(--color-bg);
 }
 
 .tab-button.active .tab-icon {

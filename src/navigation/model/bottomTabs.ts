@@ -4,8 +4,9 @@ import PersonIcon from '../../../src/shared/icons/svg/person.svg';
 import EmailIcon from '../../../src/shared/icons/svg/email.svg';
 import CardsIcon from '../../../src/shared/icons/svg/cards.svg';
 import {TabLink} from "../constants/constantsLink";
+import {ButtonNavType} from "@/navigation/types/types";
 
-export const ButtonTabs = [
+export const ButtonTabs: ButtonNavType[] = [
     {
         id: 1,
         icon: HeartIcon,
@@ -20,7 +21,7 @@ export const ButtonTabs = [
         id: 3,
         icon: CardsIcon,
         navigateLink: TabLink.CARD,
-        type: 1,
+        type: true,
     },
     {
         id: 4,

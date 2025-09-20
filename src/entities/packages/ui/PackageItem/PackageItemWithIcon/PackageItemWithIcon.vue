@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import {PackageItemWithIconTypes} from "@/entities/packages/ui/PackageItem/types/PackageItem";
-import ContainerIcons from "../../../../user/ui/ContainerIcons/ContainerIcons.vue"
+import ContainerIcons from "../../../../../shared/ui/ContainerIcons/ContainerIcons.vue"
 
 defineProps<{ package: PackageItemWithIconTypes }>()
 </script>
