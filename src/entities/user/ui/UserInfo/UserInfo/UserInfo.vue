@@ -57,7 +57,7 @@ defineProps<{ user: UserTypes }>()
 
 .status-overlay {
   position: absolute;
-  bottom: 0;
+  bottom: -1rem;
   left: 50%;
   transform: translateX(-50%) translateY(50%);
   z-index: 2;

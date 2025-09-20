@@ -46,7 +46,7 @@ defineProps<{ package: PackageItemTypes }>()
   max-width: 32.7rem;
   border-radius: 3rem;
   background-color: var(--color-bg);
-  padding: 1.8rem 2rem;
+  padding: 1rem 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
