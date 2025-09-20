@@ -1,16 +1,16 @@
 <script setup lang="ts">
-import { useRoute, useRouter } from 'vue-router'
-import { ButtonTabs } from '@/navigation/model/bottomTabs'
+import {useRoute, useRouter} from 'vue-router'
+import {ButtonTabs} from '@/navigation/model/bottomTabs'
 import ContainerIcons from "../../shared/ui/ContainerIcons/ContainerIcons.vue"
 
-const route = useRoute()
-const router = useRouter()
+const route = useRoute();
+const router = useRouter();
 
 const navigateTo = (link: string) => {
   router.push(link)
 }
 
-const isActive = (link: string) => route.path === link
+const isActive = (link: string) => route.path === link;
 </script>
 
 <template>
@@ -23,9 +23,9 @@ const isActive = (link: string) => route.path === link
         @click="navigateTo(tab.navigateLink)"
     >
       <ContainerIcons v-if="tab.type" color="--subscription-pink-gradient">
-        <div v-html="tab.icon" />
+        <div v-html="tab.icon"/>
       </ContainerIcons>
-      <div v-else v-html="tab.icon" />
+      <div v-else v-html="tab.icon"/>
     </button>
   </nav>
 </template>

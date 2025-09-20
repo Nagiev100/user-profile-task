@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import {PackageItemWithIconTypes} from "@/entities/packages/ui/PackageItem/types/PackageItem";
+import {PackageItemWithIconTypes} from "@/entities/packages/ui/PackageItem/types/packageItemTypes";
 import ContainerIcons from "../../../../../shared/ui/ContainerIcons/ContainerIcons.vue"
 
 defineProps<{ package: PackageItemWithIconTypes }>()
@@ -13,8 +13,8 @@ defineProps<{ package: PackageItemWithIconTypes }>()
   }"
   >
     <div class="iconContainer">
-      <ContainerIcons >
-        <component :is="package.icon" class="icon" />
+      <ContainerIcons>
+        <component :is="package.icon" class="icon"/>
       </ContainerIcons>
     </div>
     <p class="title" :style="{color:`var(${package.color})`}">
@@ -33,7 +33,7 @@ defineProps<{ package: PackageItemWithIconTypes }>()
   gap: 0.2rem;
   width: 15.4rem;
   border-radius: 3rem;
-  border: 4px solid green;
+  border: 4px solid var(--color-bg);
   background-color: var(--color-bg);
   padding: 1rem 5rem 1rem 1rem;
   text-align: left;
@@ -42,7 +42,7 @@ defineProps<{ package: PackageItemWithIconTypes }>()
 .title {
   font-weight: 500;
   font-size: 2.2rem;
-  line-height: 24px;
+  line-height: 2.4rem;
   letter-spacing: 0;
 }
 

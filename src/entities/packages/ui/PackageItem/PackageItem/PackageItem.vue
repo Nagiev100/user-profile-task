@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { PackageItemTypes } from "@/entities/packages/ui/PackageItem/types/PackageItem"
+import {PackageItemTypes} from "@/entities/packages/ui/PackageItem/types/packageItemTypes"
 
 defineProps<{ package: PackageItemTypes }>()
 </script>
@@ -57,7 +57,6 @@ defineProps<{ package: PackageItemTypes }>()
   font-weight: 700;
   font-size: 2.8rem;
   line-height: 3.5rem;
-  background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;

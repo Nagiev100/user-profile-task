@@ -4,7 +4,7 @@ import PackageList from '../../entities/packages/ui/PackageList/PackageList.vue'
 import ButtonNav from '../../navigation/ui/BottomNav.vue';
 import {useUserStore} from "@/entities/user/model/useUserStore";
 import {usePackagesStore} from "@/entities/packages/model/usePackagesStore"
-import { onMounted } from 'vue';
+import {onMounted} from 'vue';
 
 const userStore = useUserStore()
 const packagesStore = usePackagesStore()

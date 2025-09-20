@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { UserTypes } from '../../../types/userTypes'
+import type {UserTypes} from '../../../types/userTypes'
 import ProfileStatus from '../ProfileStatus/ProfileStatus.vue'
 import ContainerIcons from '../../../../../shared/ui/ContainerIcons/ContainerIcons.vue'
 import IconSettings from '../../../../../shared/icons/svg/settingsIcon.svg'
@@ -13,9 +13,13 @@ defineProps<{ user: UserTypes }>()
   <div class="containerUserInfo">
     <div class="avatar-wrapper">
       <section class="avatar-row">
-        <ContainerIcons><MarkerIcon/></ContainerIcons>
-        <img :src="user.avatar" alt="User avatar" class="avatar" />
-        <ContainerIcons><IconSettings/></ContainerIcons>
+        <ContainerIcons>
+          <MarkerIcon/>
+        </ContainerIcons>
+        <img :src="user.avatar" alt="User avatar" class="avatar"/>
+        <ContainerIcons>
+          <IconSettings/>
+        </ContainerIcons>
       </section>
       <ProfileStatus class="status-overlay">
         80% заполнено

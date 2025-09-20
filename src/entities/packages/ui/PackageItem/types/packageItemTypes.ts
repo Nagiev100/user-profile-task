@@ -1,5 +1,3 @@
-import {FunctionalComponent} from "vue";
-
 export interface PackageItemTypes {
     packageName: string;
     description: string;
@@ -10,5 +8,5 @@ export interface PackageItemTypes {
 export interface PackageItemWithIconTypes {
     title: string;
     color: string;
-    icon: FunctionalComponent;
+    icon: string;
 }

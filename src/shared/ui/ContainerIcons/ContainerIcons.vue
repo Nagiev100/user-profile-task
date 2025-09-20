@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import {computed} from 'vue'
 
 const props = defineProps<{
   color?: string
@@ -7,7 +7,7 @@ const props = defineProps<{
 
 const styles = computed(() => {
   const color = props.color
-  let result: Record<string, string> = {}
+  let result: Record<string, string> = {};
 
   switch (true) {
     case !color:
@@ -48,7 +48,7 @@ const styles = computed(() => {
 
 <template>
   <div class="icon-container" :style="styles">
-    <slot />
+    <slot/>
   </div>
 </template>
 

@@ -1,7 +1,7 @@
-import { createApp } from 'vue'
-import { createPinia } from 'pinia'
+import {createApp} from 'vue'
+import {createPinia} from 'pinia'
 import '/src/shared/styles/variables.css'
-import { router } from '../navigation/router'
+import {router} from '../navigation/router'
 import App from './App.vue'
 
 const app = createApp(App)

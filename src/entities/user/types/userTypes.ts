@@ -1,5 +1,5 @@
 export interface UserTypes {
-  name: string
-  avatar: string
-  age: number
+    name: string
+    avatar: string
+    age: number
 }

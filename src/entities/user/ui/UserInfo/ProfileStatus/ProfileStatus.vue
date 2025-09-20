@@ -3,7 +3,7 @@
 
 <template>
   <section class="profile-status">
-    <slot />
+    <slot/>
   </section>
 </template>
 

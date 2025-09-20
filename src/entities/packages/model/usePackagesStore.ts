@@ -1,4 +1,4 @@
-import { defineStore } from 'pinia'
+import {defineStore} from 'pinia'
 import {PackagesTypes} from "@/entities/packages/types/packagesTypes";
 
 export const usePackagesStore = defineStore('userPackages', {

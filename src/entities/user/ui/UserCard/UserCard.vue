@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import UserInfo from '../UserInfo/UserInfo/UserInfo.vue'
-import type { UserTypes } from '../../types/userTypes'
+import type {UserTypes} from '../../types/userTypes'
 
 defineProps<{ user: UserTypes }>()
 </script>
@@ -9,7 +9,7 @@ defineProps<{ user: UserTypes }>()
   <div class="user-card">
     <div class="background"></div>
     <div class="user-card__content">
-      <UserInfo :user="user" />
+      <UserInfo :user="user"/>
     </div>
   </div>
 </template>

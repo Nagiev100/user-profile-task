@@ -30,7 +30,7 @@
     --subscription-premium-light: #A6A6A6;
     --subscription-premium-base: #454545;
     --subscription-premium-accent: #969696;
-    --subscription-premium-gradient: linear-gradient(135deg,var(--subscription-premium-dark),var(--subscription-premium-light), var(--subscription-premium-base), var(--subscription-premium-accent));
+    --subscription-premium-gradient: linear-gradient(135deg, var(--subscription-premium-dark), var(--subscription-premium-light), var(--subscription-premium-base), var(--subscription-premium-accent));
 
     --subscription-pink-start: #FF1569;
     --subscription-pink-end: #C03AFF;
@@ -39,5 +39,4 @@
     --profile-completion-start: #FE7347;
     --profile-completion-end: #FF2883;
     --profile-completion-gradient: linear-gradient(135deg, var(--profile-completion-start), var(--profile-completion-end));
-
 }
