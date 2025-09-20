@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import {PackageItemWithIconTypes} from "@/entities/packages/ui/PackageItem/types/PackageItem";
 import ContainerIcons from "../../../../user/ui/ContainerIcons/ContainerIcons.vue"
+
 defineProps<{ package: PackageItemWithIconTypes }>()
 </script>
 
@@ -29,6 +30,7 @@ defineProps<{ package: PackageItemWithIconTypes }>()
   background-color: var(--color-bg);
   padding: 1rem 5rem 1rem 1rem;
   text-align: left;
+  box-shadow: 0 4px 10px var(--subscription-pink-end);
 }
 
 .title {
@@ -36,7 +38,6 @@ defineProps<{ package: PackageItemWithIconTypes }>()
   font-size: 2.2rem;
   line-height: 24px;
   letter-spacing: 0;
-
 }
 
 .iconContainer {
@@ -47,5 +48,4 @@ defineProps<{ package: PackageItemWithIconTypes }>()
   width: 2rem;
   height: 2rem;
 }
-
 </style>
