@@ -2,7 +2,6 @@
 import { useRoute, useRouter } from 'vue-router'
 import { ButtonTabs } from '@/navigation/model/bottomTabs'
 import ContainerIcons from "../../shared/ui/ContainerIcons/ContainerIcons.vue"
-import personIcon from '@/shared/icons/svg/person.svg?raw'
 
 const route = useRoute()
 const router = useRouter()
