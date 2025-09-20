@@ -28,17 +28,13 @@ const isActive = (link: string) => route.path === link
 
 <style scoped>
 .bottom-navigation {
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 6rem;
   background: white;
   display: flex;
-  justify-content: space-around;
   align-items: center;
-  border-top: 1px solid #ddd;
-  z-index: 1000;
+  justify-content: center;
+  gap: 3.8rem;
+  max-width: 37.5rem;
+  width: 100%;
 }
 
 .tab-button {
@@ -50,12 +46,10 @@ const isActive = (link: string) => route.path === link
 }
 
 .tab-icon {
-  width: 2.4rem;
-  height: 2.4rem;
   fill: #aaa;
 }
 
 .tab-button.active .tab-icon {
-  fill: #C03AFF; /* Активный цвет */
+  fill: #C03AFF;
 }
 </style>
