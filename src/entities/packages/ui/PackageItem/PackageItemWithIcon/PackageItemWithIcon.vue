@@ -6,13 +6,20 @@ defineProps<{ package: PackageItemWithIconTypes }>()
 </script>
 
 <template>
-  <button class="package-item" :style="{ borderColor: `var(${package.color})`}">
+  <button class="package-item"
+          :style="{
+    borderColor: `var(${package.color})`,
+    boxShadow: `0 2px 10px var(${package.color})`
+  }"
+  >
     <div class="iconContainer">
       <ContainerIcons >
         <component :is="package.icon" class="icon" />
       </ContainerIcons>
     </div>
-    <p class="title" :style="{ color:`var(${package.color})` }">{{ package.title }}</p>
+    <p class="title" :style="{color:`var(${package.color})`}">
+      {{ package.title }}
+    </p>
   </button>
 </template>
 
@@ -30,7 +37,6 @@ defineProps<{ package: PackageItemWithIconTypes }>()
   background-color: var(--color-bg);
   padding: 1rem 5rem 1rem 1rem;
   text-align: left;
-  box-shadow: 0 4px 10px var(--subscription-pink-end);
 }
 
 .title {
