@@ -32,6 +32,4 @@ export const ButtonTabs = [
         icon: PersonIcon,
         navigateLink: TabLink.USERPROFILE,
     },
-
-
 ]
