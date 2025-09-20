@@ -1,54 +1,65 @@
 <script setup lang="ts">
-import { computed } from "vue"
+import { computed } from 'vue'
 
-// Пропс color может быть переменной с градиентом (--...), hex-цветом, или linear-gradient(...)
 const props = defineProps<{
   color?: string
 }>()
 
-// Вычисляем стили фона
-const backgroundStyle = computed(() => {
-  if (!props.color) {
-    return { backgroundColor: 'var(--color-bg)' }
+const styles = computed(() => {
+  const color = props.color
+  let result: Record<string, string> = {}
+
+  switch (true) {
+    case !color:
+      result = {
+        backgroundColor: 'var(--color-bg)',
+        width: '4.2rem',
+        height: '4.2rem'
+      }
+      break
+
+    case color.startsWith('--'):
+      result = {
+        backgroundImage: `var(${color})`,
+        width: '4.8rem',
+        height: '4.8rem'
+      }
+      break
+
+    case color.startsWith('linear-gradient'):
+      result = {
+        backgroundImage: color,
+        width: '4.8rem',
+        height: '4.8rem'
+      }
+      break
+
+    default:
+      result = {
+        backgroundColor: color,
+        width: '4.2rem',
+        height: '4.2rem'
+      }
   }
 
-  // Если передан CSS-переменная (например, --gradient-name), используем её как background-image
-  if (props.color.startsWith('--')) {
-    return {
-      backgroundImage: `var(${props.color})`
-    }
-  }
-
-  // Если это явно linear-gradient, тоже как background-image
-  if (props.color.startsWith('linear-gradient')) {
-    return {
-      backgroundImage: props.color
-    }
-  }
-
-  // Во всех остальных случаях (например, #fff, red) — как обычный цвет
-  return {
-    backgroundColor: props.color
-  }
+  return result
 })
 </script>
 
 <template>
-  <div class="icon-container" :style="backgroundStyle">
+  <div class="icon-container" :style="styles">
     <slot />
   </div>
 </template>
 
 <style scoped>
 .icon-container {
-  width: 4.8rem; /* 48px */
-  height: 4.8rem;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  background-color: var(--color-bg); /* fallback */
-  background-size: cover; /* на случай если градиент */
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 </style>
