@@ -2,6 +2,7 @@
 import { useRoute, useRouter } from 'vue-router'
 import { ButtonTabs } from '@/navigation/model/bottomTabs'
 import ContainerIcons from "../../shared/ui/ContainerIcons/ContainerIcons.vue"
+import personIcon from '@/shared/icons/svg/person.svg?raw'
 
 const route = useRoute()
 const router = useRouter()
@@ -23,16 +24,15 @@ const isActive = (link: string) => route.path === link
         @click="navigateTo(tab.navigateLink)"
     >
       <ContainerIcons v-if="tab.type" color="--subscription-pink-gradient">
-        <component :is="tab.icon" class="tab-icon" />
+        <div v-html="tab.icon" />
       </ContainerIcons>
-      <component v-else :is="tab.icon" class="tab-icon" />
+      <div v-else v-html="tab.icon" />
     </button>
   </nav>
 </template>
 
 <style scoped>
 .bottom-navigation {
-  background: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -47,13 +47,5 @@ const isActive = (link: string) => route.path === link
   padding: 0.5rem;
   cursor: pointer;
   transition: transform 0.2s;
-}
-
-.tab-icon {
-  fill: var(--color-bg);
-}
-
-.tab-button.active .tab-icon {
-  fill: #C03AFF;
 }
 </style>

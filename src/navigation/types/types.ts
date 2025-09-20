@@ -1,8 +1,6 @@
-import type { Component } from 'vue'
-
 export interface ButtonNavType {
     id: number,
-    icon: Component;
+    icon: string;
     navigateLink: string;
     type?: boolean;
 }

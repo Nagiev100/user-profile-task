@@ -5,6 +5,8 @@ import ContainerIcons from '../../../../../shared/ui/ContainerIcons/ContainerIco
 import IconSettings from '../../../../../shared/icons/svg/settingsIcon.svg'
 import MarkerIcon from '../../../../../shared/icons/svg/markerIcon.svg'
 import CheckIcon from '../../../../../shared/icons/svg/сheckIcon.svg'
+import PersonIcon from '../../../../../shared/icons/svg/person.svg'
+
 
 defineProps<{ user: UserTypes }>()
 </script>

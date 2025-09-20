@@ -1,9 +1,9 @@
-import HeartIcon from '../../../src/shared/icons/svg/heart.svg';
-import StarsFavoriteIcon from '../../shared/icons/svg/favorite.svg';
-import PersonIcon from '../../../src/shared/icons/svg/person.svg';
-import EmailIcon from '../../../src/shared/icons/svg/email.svg';
-import CardsIcon from '../../../src/shared/icons/svg/cards.svg';
+import HeartIcon from '@/shared/icons/svg/heart.svg?raw';
+import StarsFavoriteIcon from '@/shared/icons/svg/favorite.svg?raw';
+import EmailIcon from '@/shared/icons/svg/email.svg?raw';
+import CardsIcon from '@/shared/icons/svg/cards.svg?raw';
 import {TabLink} from "../constants/constantsLink";
+import PersonIcon from '@/shared/icons/svg/person.svg?raw'
 import {ButtonNavType} from "@/navigation/types/types";
 
 export const ButtonTabs: ButtonNavType[] = [
