@@ -22,7 +22,7 @@ const isActive = (link: string) => route.path === link
         :class="{ active: isActive(tab.navigateLink) }"
         @click="navigateTo(tab.navigateLink)"
     >
-      <ContainerIcons v-if="tab.type" color="red">
+      <ContainerIcons v-if="tab.type" color="--subscription-pink-gradient">
         <component :is="tab.icon" class="tab-icon" />
       </ContainerIcons>
       <component v-else :is="tab.icon" class="tab-icon" />
