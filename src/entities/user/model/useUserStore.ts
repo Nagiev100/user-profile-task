@@ -8,9 +8,9 @@ export const useUserStore = defineStore('user', {
     actions: {
         initializeUser() {
             this.user = {
-                name: 'Вюсал',
+                name: 'Tom',
                 avatar: 'https://i.pravatar.cc/150?img=3',
-                age: 26,
+                age: 42,
             }
         },
     },

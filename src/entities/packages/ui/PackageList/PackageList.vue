@@ -56,7 +56,7 @@ const colors = [
   gap: 2rem;
   max-width: 37.5rem;
   width: 100%;
-  margin-bottom: 2.7rem;
+  margin-bottom: 2rem;
 }
 
 .packages-with-icon {

@@ -35,7 +35,7 @@ const isActive = (link: string) => route.path === link
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 3.8rem;
+  gap: 3rem;
   max-width: 37.5rem;
   width: 100%;
 }
